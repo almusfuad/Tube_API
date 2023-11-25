@@ -17,9 +17,12 @@ const fetchItemsByCategory = async (categoryId) => {
             console.log(error);
       }   
 }
+     
 
 const displayData = (data) => {
       const displayItems = document.getElementById('product-items');
+      console.log("okay");
+      console.log(data);
 
       // if there is no data
       if(data.length === 0) {
@@ -74,6 +77,24 @@ const displayData = (data) => {
             displayItems.appendChild(card);
       });
 }
+
+
+const sortDataByViews = async (categoryId) => {
+      const displayItems = document.getElementById('product-items');
+      displayItems.innerHTML = '';
+
+      try{
+           await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`)
+      .then(res => res.json())
+      .then(data => {
+            const sortedData = data.data.sort((a,b) => parseInt(b.others.views) - parseInt(a.others.views));
+            displayData(sortedData);
+            
+      });
+      } catch(error) {
+            console.log(error);
+      }
+}      
 
 
 fetchItemsByCategory(1000);
