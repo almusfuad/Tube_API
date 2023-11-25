@@ -1,0 +1,13 @@
+#blog-button{
+      background: #FF1F3D;
+}
+
+#sort-by-view{
+      background-color: rgba(37, 37, 37, 0.20); 
+} 
+
+hr {
+      border: none;
+      height: 2px;
+      background: rgba(23, 23, 23, 0.20);
+}
