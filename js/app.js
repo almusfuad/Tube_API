@@ -30,10 +30,15 @@ const displayData = (data) => {
             console.log(item);
             const card = document.createElement('div');
             card.classList.add('box');
+            const seconds = parseInt(item?.others?.posted_date);
+            const years = Math.floor(seconds / 31536000);
+            const days = Math.floor((seconds % 31536000) / 86400);
+            const hours = Math.floor((seconds % 86400) / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
             card.innerHTML = `           
             <div class="img-container">
                   <img id="thumbnail" class="img-fluid" src="${item?.thumbnail}" alt="">
-                  ${item?.others.posted_date ? `<p id="overlay-info">${item?.others.posted_date}</p>`: ""}     
+                  ${seconds ? `<p id="overlay-info">${years > 0 ?`${years} Years `: ""}${days > 0 ?`${days} Days `: ""}${hours} hours ${minutes} min ago</p>`: ""}     
             </div>
             <div id="lower" >
                   <img id="profile-image" src="${item?.authors[0]?.profile_picture}" alt="">
