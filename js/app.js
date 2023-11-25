@@ -31,7 +31,10 @@ const displayData = (data) => {
             const card = document.createElement('div');
             card.classList.add('box');
             card.innerHTML = `           
-            <img id="thumbnail" class="img-fluid" src="${item?.thumbnail}" alt="">
+            <div class="img-container">
+                  <img id="thumbnail" class="img-fluid" src="${item?.thumbnail}" alt="">
+                  ${item?.others.posted_date ? `<p id="overlay-info">${item?.others.posted_date}</p>`: ""}     
+            </div>
             <div id="lower" >
                   <img id="profile-image" src="${item?.authors[0]?.profile_picture}" alt="">
                   <div id="details" class="col-10">
@@ -60,3 +63,6 @@ const displayData = (data) => {
             displayItems.appendChild(card);
       });
 }
+
+
+allItems();

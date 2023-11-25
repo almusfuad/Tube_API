@@ -23,6 +23,35 @@ hr {
       border-radius: 8px;
       height: 150px;
       width: 290px;
+
+}
+
+.img-container{
+      position: relative;
+      display: inline-block;
+      width: 290px;
+      height: auto;
+      border-radius: 8px;
+}
+
+#overlay-info{
+      position: absolute;
+      background-color: #020202;
+      max-width: 100%;
+      border-radius: 4px;
+      bottom: 0px;
+      right: 10px;
+      color: #ffffff;
+      display: inline-flex;
+      padding: 8px 6px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-family: Inter;
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 6px;
 }
 
 .box{
@@ -94,7 +123,7 @@ hr {
 #views{
       color: rgba(23, 23, 23, 0.70);
       font-family: Inter;
-      font-size: 12px;
+      font-size: 10px;
       font-style: normal;
       font-weight: 400;
       line-height: 6px;
