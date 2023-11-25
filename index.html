@@ -22,10 +22,10 @@
 
       <!-- Browse by category button -->
       <div id="category-buttons" class="btn-group d-flex justify-content-center gap-3 align-items-center" role="group" aria-level="Category Buttons">
-            <button id="button-all" onclick="allItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">All</button>
-            <button id="button-music" onclick="musicItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Music</button>
-            <button id="button-comedy" onclick="comedyItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Comedy</button>
-            <button id="button-drawing" onclick="drawingItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Drawing</button>
+            <button data-category-id="1000" id="button-all" onclick="fetchItemsByCategory(1000)" class="category-buttons d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">All</button>
+            <button data-category-id="1001" id="button-music" onclick="fetchItemsByCategory(1001)" class="category-buttons d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Music</button>
+            <button data-category-id="1003" id="button-comedy" onclick="fetchItemsByCategory(1003)" class="category-buttons d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Comedy</button>
+            <button data-category-id="1005" id="button-drawing" onclick="fetchItemsByCategory(1005)" class="category-buttons d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Drawing</button>
       </div>
 
 

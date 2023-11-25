@@ -1,33 +1,19 @@
-const allItems = () => {
-      fetch(`https://openapi.programming-hero.com/api/videos/category/1000`)
+const fetchItemsByCategory = async (categoryId) => {
+      const displayItems = document.getElementById('product-items');
+      displayItems.innerHTML = '';
+
+      try {
+            await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`)
       .then(res => res.json())
       .then(data => displayData(data.data));
+      } catch (error) {
+            console.log(error);
+      }   
 }
-
-
-const musicItems = () => {
-      fetch(`https://openapi.programming-hero.com/api/videos/category/1001`)
-      .then(res => res.json())
-      .then(data => displayData(data.data));
-}
-
-const comedyItems = () => {
-      fetch(`https://openapi.programming-hero.com/api/videos/category/1003`)
-      .then(res => res.json())
-      .then(data => displayData(data.data));
-}
-
-const drawingItems = () => {
-      fetch(`https://openapi.programming-hero.com/api/videos/category/1005`)
-      .then(res => res.json())
-      .then(data => displayData(data.data));
-}
-
 
 const displayData = (data) => {
       const displayItems = document.getElementById('product-items');
       data.forEach((item) => {
-            console.log(item);
             const card = document.createElement('div');
             card.classList.add('box');
             const seconds = parseInt(item?.others?.posted_date);
@@ -70,4 +56,4 @@ const displayData = (data) => {
 }
 
 
-allItems();
+fetchItemsByCategory(1000);
