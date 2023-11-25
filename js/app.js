@@ -20,6 +20,19 @@ const fetchItemsByCategory = async (categoryId) => {
 
 const displayData = (data) => {
       const displayItems = document.getElementById('product-items');
+
+      // if there is no data
+      if(data.length === 0) {
+            displayItems.innerHTML = `
+                  <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img class="img-fluid w-25" src="./images/conditional_rendering.png" alt="">
+                        <h3>Oops!! Sorry, There is no content here.</h3>
+                  </div>
+            `;
+      }
+
+
+      // if there is datas
       data.forEach((item) => {
             const card = document.createElement('div');
             card.classList.add('box');
