@@ -21,4 +21,81 @@ hr {
 
 #thumbnail{
       border-radius: 8px;
+      height: 150px;
+      width: 290px;
+}
+
+.box{
+      width: 300px;
+      height: 230px;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: rgb(242, 245, 245);
+      border-radius: 8px;
+}
+
+#product-items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+}
+
+
+#profile-info{
+      display: flex;
+      justify-content: start;
+      align-items: start;
+}
+
+#profile-info{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-self: start;
+}
+
+#lower{
+      padding-left: 5px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+}
+
+#details{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-left: 10px;
+}
+
+#title{
+      color: #171717;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+}
+
+#profile-name{
+      color: rgba(23, 23, 23, 0.70);
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 10px;
+      padding-right: 6px; 
+}
+
+#views{
+      color: rgba(23, 23, 23, 0.70);
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 6px;
 }
