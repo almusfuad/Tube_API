@@ -21,11 +21,19 @@
 
 
       <!-- Browse by category button -->
-      <div id="category-buttons" class="d-flex justify-content-center gap-3 align-items-center">
-            <button id="button-all" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">All</button>
-            <button id="button-music" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Music</button>
-            <button id="button-comedy" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Comedy</button>
-            <button id="button-drawing" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Drawing</button>
+      <div id="category-buttons" class="btn-group d-flex justify-content-center gap-3 align-items-center" role="group" aria-level="Category Buttons">
+            <button id="button-all" onclick="allItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">All</button>
+            <button id="button-music" onclick="musicItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Music</button>
+            <button id="button-comedy" onclick="comedyItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Comedy</button>
+            <button id="button-drawing" onclick="drawingItems()" class="d-inline-flex p-1 px-3 justify-content-center align-items-center gap-2 border-0 rounded-1">Drawing</button>
+      </div>
+
+
+      <!-- display items -->
+      <div id="display-items" class="d-flex flex-wrap justify-content-start align-items-start gap-2 py-4">
+            <div id="single-item" class="col-md-3">
+                  
+            </div>     
       </div>
     </div>
 
