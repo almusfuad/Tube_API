@@ -1,4 +1,11 @@
 const fetchItemsByCategory = async (categoryId) => {
+      document.querySelectorAll('.category-buttons').forEach((button) => {
+            button.classList.remove('active');
+      });
+
+      document.getElementById(`button-${categoryId}`).classList.add('active');
+
+
       const displayItems = document.getElementById('product-items');
       displayItems.innerHTML = '';
 

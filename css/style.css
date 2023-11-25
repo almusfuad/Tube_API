@@ -12,6 +12,11 @@ hr {
       background: rgba(23, 23, 23, 0.20);
 }
 
+.category-buttons.active {
+      background: #FF1F3D;
+      color: #ffffff;
+}
+
 #profile-image{
       width: 40px;
       height: 40px;
