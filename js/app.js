@@ -94,6 +94,7 @@ const sortDataByViews = async (categoryId) => {
       }
 } 
 
+fetchItemsByCategory(1000);
 
 const openBlogPage = () => {
       const blogPath = '../blog.html';
@@ -104,16 +105,10 @@ const openBlogPage = () => {
 }
 
 
-const toggleIcon = () => {
-      const icon = document.getElementById('toggleIcon');
-  
-      // Check if the collapse element is currently expanded
-      const isExpanded = document.getElementById('collapseExample').classList.contains('show');
-  
-      // Update the icon based on the current state
-      icon.innerText = isExpanded ? '+' : '-';
-  }
-  document.getElementById('collapseExample').addEventListener('show.bs.collapse', toggleIcon);
-  document.getElementById('collapseExample').addEventListener('hide.bs.collapse', toggleIcon);
+document.querySelectorAll('[data-bs-toggle="collapse"]').forEach((button) => {
+      button.addEventListener('click', function () {
+          const icon = this.querySelector('.toggleIcons');
+          icon.innerText = this.getAttribute('aria-expanded') === 'true' ? '-' : '+';
+      });
+  });
 
-fetchItemsByCategory(1000);

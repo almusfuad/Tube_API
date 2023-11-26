@@ -10,25 +10,65 @@
   <body>
      <div class="p-5">
            
-                  <div class="container-fluid">
-                        <a class="btn btn-secondary d-flex justify-content-between w-100 py-1 px-5" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              <span id="topics">Discuss the scope of var, let, and const</span>
-                              <span id="toggleIcon">+</span>
-                        </a>
+                  <div class="my-1">
+                        <div class="container-fluid">
+                              <a class="btn btn-secondary d-flex justify-content-between w-100 py-1 px-5" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" data-target="toggleIcon1">
+                                    <span id="topics">Discuss the scope of var, let, and const</span>
+                                    <span class="toggleIcons" id="toggleIcon1">+</span>
+                              </a>
+                        </div>
+                        <div class="collapse container-fluid" id="collapseExample1">
+                              <div class="card card-body">
+                                    <ul>
+                                          <p class="paragraph">
+                                              <em class="bullet">var:</em> 'var' declarations are globally scoped or function/locally scoped. The scope is global when it is declared outside of a function. It is function scoped when it is declared within a function. 'var' variables can be re-declared and updated. If it is use to a variable before declaration, it will give a 'Undefined' message.
+                                          </p>
+                                          <p class="paragraph">
+                                              <em class="bullet">let:</em> 'let' is block-scoped (A block is a chunk of code bounded by {}). 'let' variables can be updated but not re-declared. If it is use to a variable before declaration, it will give a 'Reference Error' message.
+                                          </p>
+                                          <p class="paragraph">
+                                              <em class="bullet">const:</em> 'const' is also block-scoped. 'const' variables cannot be updated or re-declared. If it is use to a variable before declaration, it will give a 'Reference Error' message.
+                                          </p>
+                                      </ul>
+                              </div>
+                        </div>
                   </div>
-                  <div class="collapse container-fluid" id="collapseExample">
-                        <div class="card card-body">
-                              <ul>
-                                    <p class="paragraph">
-                                        <em class="bullet">var:</em> 'var' declarations are globally scoped or function/locally scoped. The scope is global when it is declared outside of a function. It is function scoped when it is declared within a function. 'var' variables can be re-declared and updated. If it is use to a variable before declaration, it will give a 'Undefined' message.
-                                    </p>
-                                    <p class="paragraph">
-                                        <em class="bullet">let:</em> 'let' is block-scoped (A block is a chunk of code bounded by {}). 'let' variables can be updated but not re-declared. If it is use to a variable before declaration, it will give a 'Reference Error' message.
-                                    </p>
-                                    <p class="paragraph">
-                                        <em class="bullet">const:</em> 'const' is also block-scoped. 'const' variables cannot be updated or re-declared. If it is use to a variable before declaration, it will give a 'Reference Error' message.
-                                    </p>
-                                </ul>
+                  <div class="my-1">
+                        <div class="container-fluid">
+                              <a class="btn btn-secondary d-flex justify-content-between w-100 py-1 px-5" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" data-target="toggleIcon2">
+                                    <span id="topics">The use cases of null and undefined</span>
+                                    <span class="toggleIcons" id="toggleIcon2">+</span>
+                              </a>
+                        </div>
+                        <div class="collapse container-fluid" id="collapseExample2">
+                              <div class="card card-body">
+                                    <ul>
+                                          <p class="paragraph">
+                                              <em class="bullet">Null:</em> It is the intentional absence of the value. It is one of the primitive values of JavaScript.
+                                          </p>
+                                          <p class="paragraph">
+                                              <em class="bullet">Undefined:</em> It means the value does not exist in the compiler. It is the global object.
+                                          </p>
+                                      </ul>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="my-1">
+                        <div class="container-fluid">
+                              <a class="btn btn-secondary d-flex justify-content-between w-100 py-1 px-5" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample" data-target="toggleIcon3">
+                                    <span id="topics">What means by REST API?</span>
+                                    <span class="toggleIcons" id="toggleIcon3">+</span>
+                              </a>
+                        </div>
+                        <div class="collapse container-fluid" id="collapseExample3">
+                              <div class="card card-body">
+                                    <ul>
+                                          <p class="paragraph">
+                                              <em class="bullet">REST API:</em> An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style. For this reason, REST APIs are sometimes referred to RESTful APIs.
+                                          </p>
+                                          
+                                      </ul>
+                              </div>
                         </div>
                   </div>
                   

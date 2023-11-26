@@ -136,10 +136,10 @@ hr {
 
 
 .paragraph{
-      font-size: 14px;
+      font-size: 15px;
       font-style: oblique;
       font-weight: 400;
-      line-height: 16px;
+      line-height: 20px;
 }
 
 .bullet{
@@ -150,12 +150,12 @@ hr {
       color: rgb(20, 17, 62);
 }
 
-#toggleIcon{
-      font-size: 25px;
+.toggleIcons{
+      font-size: 22px;
       font-weight: bold;
 }
 
 #topics{
-      font-size: 25px;
+      font-size: 22px;
       font-weight: bold; 
 }
