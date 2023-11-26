@@ -21,8 +21,6 @@ const fetchItemsByCategory = async (categoryId) => {
 
 const displayData = (data) => {
       const displayItems = document.getElementById('product-items');
-      console.log("okay");
-      console.log(data);
 
       // if there is no data
       if(data.length === 0) {
@@ -94,7 +92,28 @@ const sortDataByViews = async (categoryId) => {
       } catch(error) {
             console.log(error);
       }
-}      
+} 
 
+
+const openBlogPage = () => {
+      const blogPath = '../blog.html';
+
+      const blogUrl = new URL(blogPath, window.location.href);
+
+      window.open(blogUrl.href, '_blank');
+}
+
+
+const toggleIcon = () => {
+      const icon = document.getElementById('toggleIcon');
+  
+      // Check if the collapse element is currently expanded
+      const isExpanded = document.getElementById('collapseExample').classList.contains('show');
+  
+      // Update the icon based on the current state
+      icon.innerText = isExpanded ? '+' : '-';
+  }
+  document.getElementById('collapseExample').addEventListener('show.bs.collapse', toggleIcon);
+  document.getElementById('collapseExample').addEventListener('hide.bs.collapse', toggleIcon);
 
 fetchItemsByCategory(1000);

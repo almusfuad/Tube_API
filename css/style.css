@@ -133,3 +133,29 @@ hr {
       font-weight: 400;
       line-height: 6px;
 }
+
+
+.paragraph{
+      font-size: 14px;
+      font-style: oblique;
+      font-weight: 400;
+      line-height: 16px;
+}
+
+.bullet{
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      color: rgb(20, 17, 62);
+}
+
+#toggleIcon{
+      font-size: 25px;
+      font-weight: bold;
+}
+
+#topics{
+      font-size: 25px;
+      font-weight: bold; 
+}
